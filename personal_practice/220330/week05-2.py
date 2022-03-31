@@ -1,12 +1,12 @@
-n = int(input())
-A = list(map(int, input().split()))
+A, B, C = map(int, input().split())
+num = A * B * C
+count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-cnt_odd, cnt_even = 0, 0
+while num != 0:
+    digit = num % 10
+    count[digit] += 1
 
-for i in range(n):
-    if A[i] % 2 == 1:
-        cnt_odd += 1
-    else:
-        cnt_even += 1
+    num //= 10
 
-print(f"{cnt_odd}\n{cnt_even}")
+for i in range(10):
+    print(f'{i}의 개수 는 {count[i]}개 입니다.')
