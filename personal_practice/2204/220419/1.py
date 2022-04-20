@@ -1,20 +1,22 @@
-src = input("src = ")
-output = src[0]
-count = 0
+scores = list(input("이름과 국어, 수학, 과학 성적을 입력하ㅔ요 : ").split())
+scores_tup = []
 
-for char in src:
-    if output[-1] == char:
-        count += 1
-    else:
-        output += str(count) + char
-        count = 1
+for i in range(len(scores)):
+    if i % 4 != 0:
+        scores[i] = int(scores[i])
 
-output += str(count)
+for i in range(0, (len(scores) // 4)):
+    scores_tup.append(tuple(scores[4 * i : 4 * i + 4]))
 
-output_recover = ''
+scores_tup = tuple(scores_tup)
 
-for i in range(0, len(output), 2):
-    output_recover += (output[i] * int(output[i + 1]))
+print(scores_tup)
 
-print(f"output = {output}")
-print(f"output_recover = {output_recover}")
+_, _, math, science = zip(*scores_tup)
+
+print(f"수학, 과학 성적의 평균은 {sum(math) / len(math)}, {sum(science) / len(science)}입니다.")
+
+student_dict = { name : (k + m + s) / 3 for name, k, m, s in scores_tup }
+
+for key in student_dict.keys():
+    print(f"{key}{student_dict[key]:12.2f}")

@@ -1,4 +1,4 @@
-src = input("src = ")
+src = input()
 output = src[0]
 count = 0
 
