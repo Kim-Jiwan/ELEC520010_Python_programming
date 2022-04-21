@@ -23,13 +23,13 @@ dice_cases_3times = product_set(dice_cases, dice_cases_2times)
 dice_cases_4times = product_set(dice_cases, dice_cases_3times)
 dice_cases_5times = product_set(dice_cases, dice_cases_4times)
 
-print(dice_cases_3times)
+# print(dice_cases_3times)
 
-"""
+
 set_sum = { sum_set_recursive(tup, 3) for tup in dice_cases_3times }
 set_sum4 = { sum_set_recursive(tup, 4) for tup in dice_cases_4times }
 set_sum5 = { sum_set_recursive(tup, 5) for tup in dice_cases_5times }
 
 print(set_sum)
 print(set_sum4)
-print(set_sum5)"""
+print(set_sum5)

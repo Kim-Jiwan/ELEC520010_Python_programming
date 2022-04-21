@@ -1,4 +1,5 @@
-names = input().split("-")
-
-for name in names:
-    print(name[0], end = '')
+print("|\_/|")
+print("|q p|   /}")
+print('( 0 )"""\\')
+print('|"^"`    |')
+print("||_/=\\\\__|")

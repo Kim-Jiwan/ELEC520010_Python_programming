@@ -17,7 +17,7 @@ else:
 # 2 문자열 슬라이싱을 활용하는 방법
 def is_palindrome(string):
     string = string.lower().replace(" ", "")
-    return string == string[::-1]
+    return string == string[:-1]
 
 string = input("문자열을 입력하시오 : ")
 
