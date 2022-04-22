@@ -4,8 +4,11 @@ student_dict = { number : name for number, name, _ in student_tuple }
 
 number, name, phone = zip(*student_tuple)
 
+student_list = list(zip(number, name, phone))
+
 print(number, name, phone)
-"""
+print(student_list)
+
 while True:
     number = input("학번을 입력하세요 : ")
 
@@ -16,4 +19,3 @@ while True:
         break
     else:
         print(f"엥? 그런 학생은 저희 그룹에 없는데요?")
-"""

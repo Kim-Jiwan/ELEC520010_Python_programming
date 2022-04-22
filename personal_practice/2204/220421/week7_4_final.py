@@ -8,8 +8,8 @@ for i in range(len(scores)):
 for i in range(len(scores) // 4):
     scores_tups.append(tuple(scores[4 * i:4 * i + 4]))
 
-_, _, math, science = zip(*scores_tups)
-
+_, _, math, science = zip(*scores_tups) # scores_tups는 집적된 상태다!
+# unpacking!!
 print(f"학생들의 수학과 과학 성적의 평균은 각각 {sum(math) / len(math)}점, {sum(science) / len(science)}점 입니다.")
 
 print("이름         평균성적")

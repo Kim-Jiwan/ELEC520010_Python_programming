@@ -18,7 +18,7 @@ def sum_set(tup):
 
     return S
 
-def dice_sum_set(set0, n):
+def dice_sum_set(set0, n): # 합에 대한 집합. 3 ~ 18 이렇게 값을 가진다.
     tmp = set()
 
     for tup in set0:
