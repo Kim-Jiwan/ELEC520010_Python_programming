@@ -1,3 +1,6 @@
+from re import I
+
+
 def palindrom(num):
     num_pal = 0
 
@@ -10,7 +13,7 @@ def palindrom(num):
 num = int(input("숫자를 입력하세요 : "))
 
 if num == palindrom(num):
-    print(f"{num}   {palindrom(num)}")
+    print(f"{num:{num % 10}d}   {palindrom(num)}")
     print(f"{num}은 팔린드롬입니다.")
 else:
     print(f"{num}   {palindrom(num)}")
