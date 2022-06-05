@@ -3,8 +3,8 @@ import random as rd
 
 rsp = { 1 : "가위", 2 : "바위", 3 : "보" }
 
-romeo = rsp[rd.randrange(1, 4)]
-juliet = rsp[rd.randrange(1, 4)]
+romeo = rsp[rd.randint(1, 3)]
+juliet = rsp[rd.randint(1, 3)]
 
 print(f"로미오의 승부 : {romeo}")
 print(f"줄리엣의 승부 : {juliet}")
