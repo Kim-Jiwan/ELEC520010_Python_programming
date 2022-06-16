@@ -9,7 +9,7 @@ print(f"학생 정보 : {student_dic}")
 while True:
     num = input("학번을 입력하세요 : ")
 
-    if num in student_dic.kxeys():
+    if num in student_dic.keys():
         print(f"{num}번 학생은 {student_dic[num]}입니다.")
     elif num == "-1":
         print("프로그램을 종료합니다.")

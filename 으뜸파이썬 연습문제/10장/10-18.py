@@ -15,6 +15,9 @@ def partition(arr):
 
     return arr
 
-org_list = [8, 5, 12, 34, 3, 2, 97, 23, 45]
-sorted_list = partition(org_list)
-print(sorted_list)
+org = input()
+# org_list = list(map(int, input().split()))
+org_list = [ int(num) for num in org.split() ]
+part_list = partition(org_list)
+
+print(part_list)

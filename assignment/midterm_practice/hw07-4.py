@@ -18,7 +18,7 @@ _, _, math, science = zip(*tuple_score)
 
 math_science_Avg = (sum(math) + sum(science)) / (len(math) + len(science))
 # avg = [ (i + j + k) / 3 for _, i, j, k in tuple_score ]
-print(math_science_avg)
+print(math_science_Avg)
 
 print(f"학생들의 수학과 과학 성적의 평균은 {math_science_Avg:.2f}입니다.")
 

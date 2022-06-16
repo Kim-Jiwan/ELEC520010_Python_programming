@@ -1,7 +1,8 @@
 # 2017110292 김지완
 import random as rd
 
-num = rd.randrange(1, 21)
+num = rd.randint(1, 20)
+print(num)
 cnt = 0
 
 while True:

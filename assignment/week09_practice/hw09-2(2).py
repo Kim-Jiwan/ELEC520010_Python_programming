@@ -1,4 +1,4 @@
-# 2017110292 김지완
+c# 2017110292 김지완
 
 class Counter:
     def __init__(self, number = 0):

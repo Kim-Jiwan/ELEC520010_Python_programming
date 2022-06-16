@@ -5,4 +5,8 @@ def first_odd(iter):
 
 numbers = [2, 8, 6, 4, 3, 1, 4, 6, 2]
 
+print(f"처음으로 나타나는 홀수는 : {first_odd(numbers)}")
 print(f"처음으로 나타나는 홀수는 : {first_odd(iter(numbers))}")
+
+print(numbers)
+print(iter(numbers))

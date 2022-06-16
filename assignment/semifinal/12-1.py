@@ -39,7 +39,7 @@ class Rectangle:
         return self.__width * self.__height
 
     def overlap(self, r):
-        if abs(self.__x - r.__x) >= self.__width and abs(self.__y - r.__y) >= self.__height:
+        if abs(self.__x - r.__x) > self.__width or abs(self.__y - r.__y) > self.__height:
             return False
         else:
             return True
